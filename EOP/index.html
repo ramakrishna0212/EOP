@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EYES OF PHOTOGRAPHERS</title>
+	<link rel="icon" type="image/x-icon" href="D:\eyesofphotogrpher\titileimg.png">
+    <link rel="stylesheet" href="signup.css">
+    <script src="signup.js" defer></script>
+</head>
+<body>
+	
+    <div class="box">
+		<div class="login-container">
+            
+            <h1>Welcome To EOP</h1>
+            <form>
+                <label for="body">Email</label>
+                <input id="body" type="email" name="email" pattern="+@gmail.com" autocomplete="off" required>
+
+                <label for="title">Password</label>
+                <input id="title" type="text" autocomplete="off" required>
+                <div class="forgetpass">
+                    <a style="color: rgb(202, 0, 0);">Verify once before submitting</a>
+                </div>
+                <button onclick="addTask()">Submit</button>
+                <script>
+                    function addTask(){
+                        var body = document.getElementById("body").value;
+                        var title = document.getElementById("title").value;
+                        if(body === "" || title === ""){
+                            alert("You have to give your details properly!");
+                        }
+                        else{
+                            window.location.assign("file:///D:/eyesofphotogrpher/EOP/intro.html");
+                        }
+                    }
+                </script>
+            </form>
+            <p>Alredy have an account?<a href="D:\eyesofphotogrpher\EOP\eop.html" style="color: red;"> Login</a></p>
+        </div>
+    </div>
+</body>
+</html>

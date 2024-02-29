@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EYES OF PHOTOGRAPHERS</title>
+	<link rel="icon" type="image/x-icon" href="D:\eyesofphotogrpher\titileimg.png">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+	
+
+	<div class="box">
+		<div class="content">
+            <h5 style="color: rgb(0, 0, 0);font-size: x-large;">EYES OF PHOTOGRAPHERS</h5>
+			<p><a href="#admin" style="font-size: large;font-weight: 600;">Admin login</a></p>
+            <p><a href="#useroption" style="font-size: large;font-weight: 600;">User login</a></p>
+		</div>
+	</div>
+
+	<div id="useroption" class="modal">
+		<div class="content">
+            <h5 style="color: rgb(0, 0, 0);font-size: x-large;">USER YOU ARE AN</h5>
+			<p id="voter">
+				<a href="#signin" style="font-size: large;font-weight: 600;">Voter</a>
+			</p>
+			<p>
+				<a href="file:///D:/eyesofphotogrpher/apply/Participant.html" style="font-size: large;font-weight: 600;">Participant</a>
+			</p>
+			<a href="#box" class="box-close">×</a>
+		</div>
+	</div>
+
+	<!--admin login -->
+	<div id="admin" class="modal">
+		<div class="content">
+            <h5 style="color: rgb(0, 0, 0);font-size: x-large;">ADMIN LOGIN</h5>
+			<input type="text" id="code" placeholder="Enter the 'ADMIN' code....">
+			<button onclick="addTaskss()">Submit</button>
+			<script>
+				function addTaskss(){
+    				if(code.value === 'EOP04'){
+						window.location.assign("file:///D:/eyesofphotogrpher/admin/all/images.html");
+						alert("YOU ARE ENTERING INTO ADMIN PAGE ! NOW")
+    				}
+    				else{
+        				alert("wrong admin code / you didn't enter any code.");
+    				}
+				}
+			</script>
+			<a href="#box" class="box-close">×</a>
+		</div>
+	</div>
+	<!--Voter login -->
+	<div id="signin" class="modal">
+		<a href="#useroption" class="box-close" style="position: relative;left: 60%;top: -20%;">
+			×
+		</a>
+		<div class="login-container">
+			<img src="D:\eyesofphotogrpher\logoB.png" alt="" width="50%"> 
+			<form id="loginForm">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" autocomplete="off" pattern=".+gmail.com" required><br><br>
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" autocomplete="off"  required><br><br>
+				<div class="forgetpass">
+                    <a style="color: rgb(202, 0, 0);">Verify once before submitting</a>
+                </div>
+				<button type="submit">Login</button>
+			</form>
+			<script>
+				document.getElementById('loginForm').addEventListener('submit', function(event) {
+					event.preventDefault(); 
+					var email = document.getElementById('email').value;
+					var password = document.getElementById('password').value;
+					if (email === 'phani@gmail.com' && password === '617') {
+						alert("Account verified, Welcome PHANI");
+						window.location.href = "file:///D:/eyesofphotogrpher/EOP/intro.html";
+					} 
+					else if (email === 'hemanth@gmail.com' && password === '632') {
+						alert("Account verified, Welcome HEMANTH");
+						window.location.href = "file:///D:/eyesofphotogrpher/EOP/intro.html";
+					}
+					else if (email === 'kartheek@gmail.com' && password === '634') {
+						alert("Account verified, Welcome KARTHEEK");
+						window.location.href = "file:///D:/eyesofphotogrpher/EOP/intro.html";
+					}
+					else if (email === 'chandra@gmail.com' && password === '645') {
+						alert("Account verified, Welcome CHANDRA");
+						window.location.href = "file:///D:/eyesofphotogrpher/EOP/intro.html";
+					}
+					else {
+						alert("Invalid email or password. Try again.");
+					}
+				});
+			</script>
+                <p>Don't have an account?<a href="file:///D:/eyesofphotogrpher/EOP/index.html" style="color: red;"> Sign up</a></p>
+	    </div>
+	</div>
+</body>
+</html>

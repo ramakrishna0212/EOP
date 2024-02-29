@@ -1,0 +1,69 @@
+*{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  list-style: none;
+}
+body{ 
+  font-family: 'Poppins', sans-serif;
+  background-image: url("	https://cdn.pixabay.com/photo/2014/10/18/23/17/california-getula-493849_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: 120%;
+}
+.aboutus{
+  padding-left: 50%;
+  padding-top: 4%;
+}
+.aboutus a{
+  padding: 2px 25px;
+  font-weight: 600;
+}
+.aboutus a:hover{
+  color: #ff0000;
+  transition: 0.5s;
+}
+.imae{
+  margin-top: -6%;
+  padding-left: 4%;
+}
+form{
+  padding-top: 16%;
+  padding-left: 39%;
+  line-height: 30px;
+  width: 9%;
+}
+main{
+  padding-top: 2%;
+  padding-left: 57%;
+  line-height: 30px;
+  width: 19%;
+}
+input{
+  width: 234%;
+  padding: 9px 12px;
+  color: rgb(255 255 255);
+  background-color: #ffffff1f;
+  border: none;
+  outline: none;
+}
+button{
+  background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 33px;
+    cursor: pointer;
+    margin: 14%;
+}
+button:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
+  border:  solid 2px rgb(255, 0, 0);
+}
+.rules{
+  padding-left: 5%;
+  margin-top: 5%;
+}
+.rules a:hover{
+  color: #ff0000;
+  text-decoration: underline;
+}

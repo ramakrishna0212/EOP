@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN PAGE</title>
+    <link rel="icon" type="image/x-icon" href="D:\eyesofphotogrpher\titileimgW.png">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("tWPZOLtz3AjMhQqT-");
+        })();
+    </script>
+    <script src="winnermail.js" defer></script>
+    <style>
+        body{
+            text-decoration: none;
+            background-image: url("https://images.unsplash.com/photo-1704118095425-a3d37c67720a?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            padding-left: 45%;
+            padding-top: 24%;
+        }
+        button{
+            padding: 1% 26px;
+            margin: 4%;
+        }
+        input{
+            width: 31%;
+            position: relative;
+            left: -7%;
+            outline: none;
+            padding: 1% 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container border mt-3 bg-light">
+        <h1 style="color: white;">Winner mail</h1>
+            <div class="form-group">
+                <input type="email" class="form-control" id="email" autocomplete="off" placeholder="Enter email" />
+            </div>
+            <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

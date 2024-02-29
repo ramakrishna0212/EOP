@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Ended Redirect</title>
+</head>
+<body>
+<style>
+  body{
+    background-color: rgb(255, 255, 255);
+  }
+  video{
+    width: 108%;
+    position: fixed;
+    margin: -25px;
+  }
+</style>
+<video id="myVideo" autoplay muted>
+  <source src="D:\eyesofphotogrpher\intro.mp4" type="video/mp4" width="100%">
+</video>
+
+<script>
+document.getElementById('myVideo').addEventListener('ended', function() {
+  window.location.href = 'file:///D:/eyesofphotogrpher/EOP/login.html';
+});
+</script>
+
+</body>
+</html>
